@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "webappmsc-bbacc"
+  },
+  "targets": {
+    "webappmsc-bbacc": {
+      "hosting": {
+        "webAppMSC": [
+          "webappmsc-bbacc"
+        ]
+      }
+    }
+  }
+}

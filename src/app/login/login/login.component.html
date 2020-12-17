@@ -1,0 +1,55 @@
+<div *ngIf="aunth.user | async as user; else login">
+    <app-navbar></app-navbar>
+    <div class="col-lg-12">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+
+
+<ng-template #login>
+    <!-- <div class="container center-h center-v">
+        <div class="card bg-light loginDiv" style="max-width: 30rem;">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+                <div>
+                    <input class="form-control" type="text" name="email" placeholder="Escribe tu email...." [(ngModel)]="aunth.email">
+                    <br/>
+                    <br/>
+                    <input class="form-control" type="password" name="pass" placeholder="Contraseña" [(ngModel)]="aunth.pass">
+                    <br/><br/>
+                    <button (click)="aunth.loging()">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section>
+        <div class="row g-0">
+            <div class="col-lg-7 bg-color-log1">
+
+            </div>
+
+            <div class="col-lg-5 d-flex flex-column aling-items-end min-vh-100 bg-color-log2">
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 ">
+                    <img src="assets/msc_logo.png">
+                </div>
+                <div class="px-lg-6 py-lg-4 p-4 w-100 mt-5">
+                    <h1>Ingresar</h1>
+                    <form class="mb-5">
+                        <div class="mb-4">
+                            <input class="form-control wlogin" type="text" name="email" placeholder="Email" [(ngModel)]="aunth.email">
+                            <div id="emailHelp" class="form-text">Ingresa tu correo para inicio de sesion</div>
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control wlogin" type="password" name="pass" placeholder="Contraseña" [(ngModel)]="aunth.pass">
+                        </div>
+                        <button type="submit" (click)="aunth.loging()" class="btn btcolor btn-primary w-100 wlogin">Iniciar sesión</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</ng-template>

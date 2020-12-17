@@ -1,0 +1,47 @@
+<div class="container">
+    <form [formGroup]="form" class="m-5" (ngSubmit)="save($event)">
+        <div class="form-group">
+            <label>Nombre del Producto</label>
+            <input type="text" class="form-control" formControlName="nombre" [ngModel]="dataanterior.nombre">
+            <small class="form-text text-muted">Ingrese el nombre del Producto</small>
+        </div>
+        <div class="form-group">
+            <label>Modelo</label>
+            <input type="text" class="form-control" formControlName="modelo" [ngModel]="dataanterior.modelo">
+            <small class="form-text text-muted">Ingrese el modelo del Producto</small>
+        </div>
+        <div class="form-group">
+            <label>Pais de Origen</label>
+            <input type="text" class="form-control" formControlName="paisOrigen" [ngModel]="dataanterior.paisOrigen">
+            <small class="form-text text-muted">Ingrese el pais de origen del Producto</small>
+        </div>
+        <div class="form-group">
+            <label>Fabricante</label>
+            <input type="text" class="form-control" formControlName="fabricante" [ngModel]="dataanterior.fabricante">
+            <small class="form-text text-muted">Ingrese el nombre del fabricante</small>
+        </div>
+        <div class="form-group">
+            <label>Advetencias</label>
+            <input type="text" class="form-control" formControlName="advertencia" [ngModel]="dataanterior.advertencia" maxlength="70">
+            <small class="form-text text-muted">Ingrese las advertenias del producto</small>
+        </div>
+
+        <div class="form-group">
+            <label>Modo de uso</label>
+            <input type="text" class="form-control" formControlName="modoUso" [ngModel]="dataanterior.modoUso" maxlength="70">
+            <small class="form-text text-muted">Ingrese el modo de uso del producto</small>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col">
+                <button type="submit" *ngIf="this.form.valid" class="btn btn-outline-success m-2">Crear</button>
+                <button type="button" (click)="cancelar()" class="btn btn-outline-danger m-2">Cancelar</button>
+
+            </div>
+
+        </div>
+
+    </form>
+</div>

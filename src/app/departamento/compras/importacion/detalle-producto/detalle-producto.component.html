@@ -1,0 +1,39 @@
+<div class="container mt-3 w-80">
+    <div class="card">
+        <div class="card-header card-title">
+            <h1 class="text-center">{{productodata.nombre}}</h1>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Modelo: {{productodata.modelo}}</p>
+            <p class="card-text">Pais de Origen: {{productodata.paisOrigen}}</p>
+            <p class="card-text">Fabricante: {{productodata.fabricante}}</p>
+            <p class="card-text">Advertencias: {{productodata.advertencia}}</p>
+            <p class="card-text">Modo de uso: {{productodata.modoUso}}</p>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-lg-2 mt-2">
+            <button type="button" (click)="imprime()" class="btn btn-dark ">Imprimir</button>
+        </div>
+        <div class="col-lg-2 mt-2">
+            <button type="button" (click)="imprime()" class="btn btn-dark ">Editar</button>
+        </div>
+        <div class="col-lg-2 mt-2">
+            <button type="button" (click)="imprime()" class="btn btn-dark ">Eliminar</button>
+        </div>
+        <div class="col-lg-6 mt-2">
+            <button type="button" (click)="regresar()" class="btn btn-dark ">Regresar</button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- <div class="card-body">
+    <h1 class="card-title text-center">{{productodata.nombre}}</h1>
+    <p class="card-text">Modelo: {{productodata.modelo}}</p>
+    <p class="card-text">Pais de Origen: {{productodata.paisOrigen}}</p>
+    <p class="card-text">Fabricante: {{productodata.fabricante}}</p>
+    <p class="card-text">Advertencias: {{productodata.advertencia}}</p>
+    <p class="card-text">Modo de uso: {{productodata.modoUso}}</p> -->

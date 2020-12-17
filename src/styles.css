@@ -1,0 +1,58 @@
+        /* You can add global styles to this file, and also import other style files */
+        
+        .loginDiv {
+            text-align: center;
+            width: 100%;
+            float: none;
+        }
+        
+        .log {
+            text-align: center;
+        }
+        
+        .center-h {
+            justify-content: center;
+        }
+        
+        .center-v {
+            align-items: center;
+        }
+        
+        body {
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Exo', sans-serif;
+        }
+        
+        .wlogin {
+            min-height: 3.123rem;
+            line-height: initial;
+        }
+        
+        .btcolor:hover {
+            background-color: #f05545;
+        }
+        
+        .btcolor {
+            background-color: #9a1c1f;
+        }
+        
+        .puntero {
+            cursor: pointer;
+        }
+        
+        .bg-color-log1 {
+            /* background: rgb(154, 28, 31);
+            background: -moz-linear-gradient(90deg, rgba(154, 28, 31, 1) 0%, rgba(174, 131, 132, 1) 25%, rgba(234, 198, 200, 1) 50%, rgba(255, 236, 236, 1) 75%, rgba(236, 239, 241, 1) 100%);
+            background: -webkit-linear-gradient(90deg, rgba(154, 28, 31, 1) 0%, rgba(174, 131, 132, 1) 25%, rgba(234, 198, 200, 1) 50%, rgba(255, 236, 236, 1) 75%, rgba(236, 239, 241, 1) 100%);
+            background: linear-gradient(90deg, rgba(154, 28, 31, 1) 0%, rgba(174, 131, 132, 1) 25%, rgba(234, 198, 200, 1) 50%, rgba(255, 236, 236, 1) 75%, rgba(236, 239, 241, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9a1c1f", endColorstr="#eceff1", GradientType=1); */
+            background: rgb(50, 50, 50);
+            background: -moz-linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(153, 30, 32, 1) 33%, rgba(235, 239, 242, 1) 97%);
+            background: -webkit-linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(153, 30, 32, 1) 33%, rgba(235, 239, 242, 1) 97%);
+            background: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(153, 30, 32, 1) 33%, rgba(235, 239, 242, 1) 97%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#323232", endColorstr="#ebeff2", GradientType=1);
+        }
+        
+        .bg-color-log2 {
+            background-color: #eceff1;
+        }

@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-11">
+            <input #termino type="text" class="form-control wlogin" placeholder="Buscar Producto......">
+        </div>
+        <div class="col-lg-1">
+            <button type="button" (click)="nuevo()" class="btn btn-outline-secondary wlogin ">Agregar</button>
+        </div>
+
+        <!-- <div class="col m-5">
+            <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar Producto......">
+
+        </div>
+        <button type="button" (click)="nuevo()" class="btn btn-outline-secondary ">Agregar</button> -->
+
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+
+        <div class="col" *ngFor="let producto of items">
+            <div class="card border-secondary h-100 puntero" (click)="irProducto(producto)">
+                <div class="card-header text-center text-capitalize font-weight-bold">{{producto.nombre}}</div>
+                <div class="card-body text-secondary">
+                    <p class="card-text">Modelo: {{producto.id}}</p>
+                    <p class="card-text">Pais de Origen: {{producto.paisOrigen}}</p>
+                    <p class="card-text">Fabricante: {{producto.fabricante}}</p>
+
+                </div>
+            </div>
+            <!-- <div class="card-columns">
+                <div class="card border-secondary mb-3 puntero" (click)="verProducto( producto )" *ngFor="let producto of items" style="max-width: 18rem;">
+                    <div class="card-header text-center text-capitalize font-weight-bold">{{producto.nombre}}</div>
+                    <div class="card-body text-secondary">
+                        <p class="card-text">Modelo: {{producto.modelo}}</p>
+                        <p class="card-text">Pais de Origen: {{producto.paisOrigen}}</p>
+                        <p class="card-text">Fabricante: {{producto.fabricante}}</p>
+                        <p class="text-right"><img src="assets/msc_1_1.png" width="48" height="12.68" alt="" loading="lazy"></p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+
+    </div>
